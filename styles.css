@@ -2,11 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    height: 960px;
+    width: 960px;
 }
 
 .container div {
     flex: 0 0 calc(6.25% - 10px);
     background-color: black;
-    height: 50px;
-    width: 50px;
+    height: auto;
+    width: auto;
 }
