@@ -1,14 +1,29 @@
+.webpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    font-weight: bold;
+    height: 40px;
+    width: 100px;
+    background-color: lightblue;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    /* initializes grid size for a 16x16 grid */
     height: 960px;
     width: 960px;
 }
 
-.container div {
+.gridItems {
+    /* flex basis calculates each grid item to be 1/16 of the total container size */
     flex: 0 0 calc(6.25% - 10px);
     background-color: black;
-    height: auto;
-    width: auto;
 }
